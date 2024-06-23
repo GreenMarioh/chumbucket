@@ -1,0 +1,5 @@
+ const articles = [];
+    $('.group.pos_relative.font_dinNextLtPro.bg_white.100').each((_, element) => { // Target article item container
+      const title = $(element).find('.mb_30.fs_22.leading_22px.fw_700').text().trim(); // Extract title from element
+      articles.push(title);
+    });
